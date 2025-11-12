@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 function connectDB() {
-    mongoose.connect("mongodb://127.0.0.1:27017/savoroapp")
+    mongoose.connect(process.env.MONGODB_URI)
         .then(() => {
             console.log('MongoDB Connected');
         })
