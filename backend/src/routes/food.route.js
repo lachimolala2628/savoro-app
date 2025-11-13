@@ -14,5 +14,7 @@ router.post('/', authMiddleware.authFoodPartnerMiddleware, upload.single('video'
 
 // GET /api/food/ [protected]
 
+router.get('/', authMiddleware.authUserMiddleware, foodController.getFoodItems);
+
 
 module.exports = router
