@@ -6,6 +6,18 @@ const foodPartnerSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    contactName: {
+        type: String,
+        required: true
+    },
+    phone: {
+        type: Number,
+        required: true
+    },
+    address: {
+        type: String,
+        required: true
+    },
     email: {
         type: String,
         required: true,
@@ -14,7 +26,7 @@ const foodPartnerSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
-    }
+    },
 
 }, { timestamps: true });
 
